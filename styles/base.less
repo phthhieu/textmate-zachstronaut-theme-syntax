@@ -1,0 +1,182 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(255, 1, 224, 0.08);
+}
+
+.comment {
+  font-style: italic;
+  color: #0066FF;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #AA0000;
+}
+
+.source {
+  color: #9C6B00;
+  background-color: rgba(156, 107, 0, 0.08);
+}
+
+.source .keyword, .source .storage {
+  color: #787BFF;
+}
+
+.source .constant {
+  color: #FF64AA;
+}
+
+.source .constant.language {
+  font-style: italic;
+}
+
+.source .variable {
+  color: #FFD163;
+}
+
+.source .keyword.operator {
+}
+
+.source .support.function, .source .entity.name.function {
+  color: #FFB200;
+}
+
+.source .meta.class .entity {
+  text-decoration: underline;
+  color: #FFB200;
+}
+
+.meta.scope.heredoc, .source .string, .text.html.basic {
+  color: #A8998B;
+}
+
+.meta.scope.heredoc, .source .string {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.meta.tag, .declaration.tag {
+  color: #00CD00;
+}
+
+.entity.other.attribute-name {
+  color: #9865FF;
+}
+
+.meta.tag .string {
+  font-style: italic;
+  color: #007B00;
+}
+
+.text.html .constant.character {
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.source.css {
+  color: #005C5C;
+  background-color: rgba(0, 252, 255, 0.06);
+}
+
+.source.css .keyword.control.at-rule {
+  font-style: italic;
+  color: #009A9A;
+}
+
+.source.css .entity.name.tag.css {
+  color: #5AFFFF;
+}
+
+.source.css .meta.selector.css .entity.other.attribute-name {
+  font-style: italic;
+  color: #009A9A;
+}
+
+.source.css .support.function, .source.css .punctuation.section.function {
+  color: #5AFFFF;
+}
+
+.source.css .variable.parameter {
+  font-style: italic;
+}
+
+.source.css .support.type.property-name {
+  color: #CC63FF;
+}
+
+.source.css .support.constant, .source.css .keyword.other {
+  color: #9A9900;
+}
+
+.source.css .constant.numeric, .source.css .constant.other {
+  color: #FFFF00;
+}
+
+.source.css .variable {
+  color: #FFFF00;
+}
+
+.source.php.embedded.line {
+  background-color: rgba(156, 107, 0, 0.16);
+}
+
+.source.js .source.php {
+  background-color: rgba(156, 107, 0, 0.16);
+}
+
+.source.js .support.class {
+  color: #FFD163;
+}
+
+.source.js .support.constant {
+  font-style: italic;
+  color: #FFB200;
+}
